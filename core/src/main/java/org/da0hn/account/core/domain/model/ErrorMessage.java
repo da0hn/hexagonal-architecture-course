@@ -14,7 +14,7 @@ public final class ErrorMessage {
   }
 
   public static void insufficientFunds() {
-    throw new BusinessException("Saldo insuficiente");
+    throw new BusinessException("Saldo insuficiente.");
   }
 
   public static void sameAccount() {
