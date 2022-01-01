@@ -12,12 +12,12 @@ import java.util.Map;
 import static java.util.Objects.isNull;
 
 @Named
-public class AccountRepositoryAdapter implements AccountRepository {
+public class FakeAccountRepositoryAdapter implements AccountRepository {
 
   private final Map<Integer, Account> database = new HashMap<>();
 
 
-  public AccountRepositoryAdapter() {
+  public FakeAccountRepositoryAdapter() {
     this.database.put(10, new Account(10, new BigDecimal(100), "Gabriel Fake"));
     this.database.put(20, new Account(20, new BigDecimal(100), "Nathally Fake"));
   }
