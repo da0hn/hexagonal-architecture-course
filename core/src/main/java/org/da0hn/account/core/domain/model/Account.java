@@ -12,7 +12,6 @@ public class Account {
   private String holder;
   private BigDecimal balance;
 
-
   public Account() {
     this.number = 0;
     this.balance = BigDecimal.ZERO;
