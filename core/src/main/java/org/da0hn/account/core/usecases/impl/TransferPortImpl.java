@@ -14,6 +14,7 @@ import java.util.Optional;
 import static java.util.Objects.isNull;
 import static org.da0hn.account.core.domain.model.ErrorMessage.mandatory;
 import static org.da0hn.account.core.domain.model.ErrorMessage.noexistent;
+import static org.da0hn.account.core.domain.model.ErrorMessage.sameAccount;
 
 @Named
 public class TransferPortImpl implements TransferPort {
@@ -43,11 +44,16 @@ public class TransferPortImpl implements TransferPort {
     if(isNull(toId)) {
       mandatory("Conta crédito");
     }
+    if(fromId.equals(toId)) {
+      sameAccount();
+    }
 
     final var accountFrom = this.getAccount(fromId, () -> noexistent("Conta débito"));
     final var accountTo = this.getAccount(toId, () -> noexistent("Conta crédito"));
 
     this.transfer.process(amount, accountFrom, accountTo);
+    this.repository.update(accountFrom);
+    this.repository.update(accountTo);
   }
 
   private Account getAccount(final Integer number, final Runnable errorCallback) {
