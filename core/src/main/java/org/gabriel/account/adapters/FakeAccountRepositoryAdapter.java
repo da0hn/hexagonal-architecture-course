@@ -1,8 +1,8 @@
-package org.da0hn.account.adapters;
+package org.gabriel.account.adapters;
 
-import org.da0hn.account.core.domain.model.Account;
-import org.da0hn.account.core.domain.model.BusinessException;
-import org.da0hn.account.core.ports.AccountRepository;
+import org.gabriel.account.core.domain.model.Account;
+import org.gabriel.account.core.domain.model.BusinessException;
+import org.gabriel.account.core.ports.AccountRepository;
 
 import javax.inject.Named;
 import java.math.BigDecimal;

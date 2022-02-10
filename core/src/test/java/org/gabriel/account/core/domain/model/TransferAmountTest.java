@@ -1,6 +1,6 @@
-package org.da0hn.account.core.domain.model;
+package org.gabriel.account.core.domain.model;
 
-import org.da0hn.account.core.domain.service.Transfer;
+import org.gabriel.account.core.domain.service.Transfer;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

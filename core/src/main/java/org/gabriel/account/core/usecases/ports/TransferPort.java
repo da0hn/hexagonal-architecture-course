@@ -1,6 +1,6 @@
-package org.da0hn.account.core.usecases.ports;
+package org.gabriel.account.core.usecases.ports;
 
-import org.da0hn.account.core.domain.model.Account;
+import org.gabriel.account.core.domain.model.Account;
 
 import java.math.BigDecimal;
 

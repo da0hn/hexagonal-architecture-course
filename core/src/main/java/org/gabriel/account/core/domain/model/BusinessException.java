@@ -1,4 +1,4 @@
-package org.da0hn.account.core.domain.model;
+package org.gabriel.account.core.domain.model;
 
 import java.io.Serial;
 

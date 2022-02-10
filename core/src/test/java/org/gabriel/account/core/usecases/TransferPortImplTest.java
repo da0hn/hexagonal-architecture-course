@@ -1,7 +1,7 @@
-package org.da0hn.account.core.usecases;
+package org.gabriel.account.core.usecases;
 
-import org.da0hn.account.core.domain.model.BusinessException;
-import org.da0hn.account.core.usecases.ports.TransferPort;
+import org.gabriel.account.core.domain.model.BusinessException;
+import org.gabriel.account.core.usecases.ports.TransferPort;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

@@ -1,12 +1,12 @@
-package org.da0hn.account.core.domain.service;
+package org.gabriel.account.core.domain.service;
 
-import org.da0hn.account.core.domain.model.Account;
+import org.gabriel.account.core.domain.model.Account;
 
 import javax.inject.Named;
 import java.math.BigDecimal;
 
 import static java.util.Objects.isNull;
-import static org.da0hn.account.core.domain.model.ErrorMessage.mandatory;
+import static org.gabriel.account.core.domain.model.ErrorMessage.mandatory;
 
 @Named
 public class Transfer {

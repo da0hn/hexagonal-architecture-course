@@ -1,10 +1,10 @@
-package org.da0hn.account.core.domain.model;
+package org.gabriel.account.core.domain.model;
 
 import java.math.BigDecimal;
 
 import static java.util.Objects.isNull;
-import static org.da0hn.account.core.domain.model.ErrorMessage.insufficientFunds;
-import static org.da0hn.account.core.domain.model.ErrorMessage.mandatory;
+import static org.gabriel.account.core.domain.model.ErrorMessage.insufficientFunds;
+import static org.gabriel.account.core.domain.model.ErrorMessage.mandatory;
 
 public class Account {
 

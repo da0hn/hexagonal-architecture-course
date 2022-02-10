@@ -1,4 +1,4 @@
-package org.da0hn.account.core.domain.model;
+package org.gabriel.account.core.domain.model;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

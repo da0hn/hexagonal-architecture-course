@@ -1,6 +1,6 @@
-package org.da0hn.account.core.ports;
+package org.gabriel.account.core.ports;
 
-import org.da0hn.account.core.domain.model.Account;
+import org.gabriel.account.core.domain.model.Account;
 
 public interface AccountRepository {
 
