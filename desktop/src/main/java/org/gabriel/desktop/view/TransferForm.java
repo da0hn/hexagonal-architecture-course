@@ -78,14 +78,22 @@ public class TransferForm {
 
     setupCreditTextField(flowPane);
     setupCreditNameTextField(flowPane);
+
+    setupValueTextField(flowPane);
     setupTransferButton(flowPane);
 
     return flowPane;
   }
 
+  private void setupValueTextField(final FlowPane flowPane) {
+    valueTextField = new TextField();
+    valueTextField.setPrefWidth(200);
+    flowPane.getChildren().add(valueTextField);
+  }
+
   private void setupCreditNameTextField(final FlowPane flowPane) {
     nameCreditTextField = new TextField();
-    nameCreditTextField.setPrefWidth(200);
+    nameCreditTextField.setPrefWidth(300);
     flowPane.getChildren().add(nameCreditTextField);
   }
 
@@ -98,6 +106,8 @@ public class TransferForm {
           getValueAsInteger(debitTextField.getText()),
           getValueAsInteger(creditTextField.getText())
         );
+        clear();
+        message("Transferência feita com sucesso!");
       }
       catch(final Exception exception) {
         message(exception.getMessage());
@@ -149,7 +159,7 @@ public class TransferForm {
       }
       else {
         final var account = maybeAccount.get();
-        output.setText(account + " - Saldo R$ " + account.getBalance());
+        output.setText(account.getHolder() + " - Saldo R$ " + account.getBalance());
       }
     }
     catch(final Exception exception) {
