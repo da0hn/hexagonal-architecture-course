@@ -9,5 +9,10 @@ module account.desktop {
   requires spring.context;
 
   requires javafx.controls;
+  requires java.sql;
 
+  opens org.gabriel.desktop.build.develop;
+  opens org.gabriel.desktop.build.homolog;
+  opens org.gabriel.desktop.build.production;
+  opens org.gabriel.desktop.view;
 }
